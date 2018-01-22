@@ -1,8 +1,14 @@
-language: php
-php:
+language: java:
   - '7.0'
   - '7.1'
 
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk7
+
 script:
-   - composer install
-   - vendor/bin/phpunit
+  - jdk_switcher use oraclejdk8
+  - # do stuff with Java 8
+  - jdk_switcher use openjdk7
+  - # do stuff with Java 7
