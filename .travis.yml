@@ -3,9 +3,13 @@ sudo: false
 install: true
 #script: mvn clean install
 script: 
+ # Building the project
  - mvn compile
  - mvn test
+ - mvn package
 
+ # Testing the project
+ - mvn verify
 
 
 
