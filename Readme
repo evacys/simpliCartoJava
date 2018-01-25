@@ -1,0 +1,37 @@
+You can download this project and open it as a maven project on your IDE
+
+You will find the javadoc in the doc folder. To access it, open the index.html file.
+
+You fill find the packaged API (jar file) in the target folder.
+
+
+To use this API these are the command that you should use:
+
+******************************
+First, we create a Shapefile object that will allow us to read and write shapefiles
+You can change shp by any name of your choice
+
+Shapefile shp = new Shapefile();
+
+*******************************
+Then we read the input shapefile and apply simplication to its features
+inputFilePath is a string that corresponds to the input layer path
+
+shp.readShp(inputFilePath);
+
+******************************
+To write the simplified geometries into a new shapefile, we need to type the following command
+
+shp.createFeatureLine(inputFilePath);
+
+It is the same path as the input path, the function will automatically write the new file into a folder named "output"
+The layer will have the same name as the input one but with '_result' at the end of it
+
+
+Here we need to specify in a way the geometry type
+
+If it is a Point layer use: createFeaturePoint
+
+If it is a line use: createFeatureLine
+
+If it is a polygon use: createFeaturePolygon
