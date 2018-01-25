@@ -3,6 +3,8 @@ sudo: false
 install: true
 script: 
   - mvn compile
+  - mvn test
+  ls -l ./target/surefire-reports
 
 
 
