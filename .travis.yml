@@ -9,7 +9,9 @@ script:
  - mvn package
 
  # Testing the project
- - mvn verify
+# - mvn verify
 
+ # Deploying the project
+# - mvn deploy
 
 
