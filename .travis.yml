@@ -12,5 +12,5 @@ script:
  - mvn verify
 
  # Deploying the project
-# - mvn deploy
+ - mvn deploy
 
