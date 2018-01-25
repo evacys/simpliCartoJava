@@ -14,4 +14,3 @@ script:
  # Deploying the project
 # - mvn deploy
 
-
