@@ -3,7 +3,7 @@ sudo: false
 install: true
 script: 
   - mvn compile
-  - mvn test
+  # - mvn test
 
 
 
