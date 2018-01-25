@@ -1,14 +1,8 @@
-language: java:
-  - '7.0'
-  - '7.1'
+language: java
+sudo: false
+install: true
+script: 
+  - mvn compile
 
-jdk:
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk7
 
-script:
-  - jdk_switcher use oraclejdk8
-  - # do stuff with Java 8
-  - jdk_switcher use openjdk7
-  - # do stuff with Java 7
+
