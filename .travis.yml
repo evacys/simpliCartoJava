@@ -15,5 +15,5 @@ script:
 deploy:
   on:
     branch: deploy
- # repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter
+ # Skipping a deployment with the  provider because this branch is not permitted
 
