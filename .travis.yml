@@ -12,6 +12,6 @@ script:
  - mvn verify
 
  # Deploying the project
- #- mvn deploy
+ - mvn deploy
  # repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter
 
