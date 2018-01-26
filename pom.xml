@@ -81,13 +81,5 @@
 		</repository>
 	</repositories>
 	
-	<distributionManagement>
-    <repository>
-        <uniqueVersion>false</uniqueVersion>
-        <id>corp1</id>
-        <name>Corporate Repository</name>
-        <url>https://github.com/evacys/simpliCartoJava/tree/deploy</url>
-        <layout>default</layout>
-    </repository>
-</distributionManagement>
+
 </project>
