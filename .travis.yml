@@ -17,9 +17,13 @@ jobs:
   include:
     - stage: GitHub Release
       script: skip
+       before_deploy:
+      # Set up git user name and tag this commit
+      - git config --local user.name "evacys"
+      - git config --local user.email "eva.chenyensu@gmail.com"
       deploy:
         provider: releases
-        api_key: "$GITHUB_OAUTH_TOKEN"
+        api_key: "cb32ebb9deec2d86ee6294f0e535fc3d25ae59ea"
 
  # Deploying the project
 # deploy
