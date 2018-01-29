@@ -13,6 +13,8 @@ script:
 
  # Deploying the project
 deploy:
+  provider: heroku
+  api_key: "8ba59df0-bb57-4150-b2b6-2084cc48dda0"
   on:
     branch: master
  # Skipping a deployment with the  provider because this branch is not permitted
