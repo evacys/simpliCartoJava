@@ -13,9 +13,6 @@ script:
 
  # Deploying the project
 deploy:
-  skip_cleanup: true
-  provider: script
-  script: ./scripts/deploy.sh
   on:
     branch: master
 # Skipping a deployment with the  provider because this branch is not permitted
