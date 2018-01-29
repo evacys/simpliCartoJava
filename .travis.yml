@@ -10,9 +10,19 @@ script:
 
  # Testing the project
  - mvn verify
+ 
+ 
+ 
+jobs:
+  include:
+    - stage: GitHub Release
+      script: skip
+      deploy:
+        provider: releases
+        api_key: "$GITHUB_OAUTH_TOKEN"
 
  # Deploying the project
-deploy
+# deploy
   # provider: heroku
   # api_key: "8ba59df0-bb57-4150-b2b6-2084cc48dda0"
   # on:
