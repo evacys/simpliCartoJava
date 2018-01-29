@@ -13,6 +13,10 @@ script:
 
  # Deploying the project
 deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "90e3ea5b1c0a1d8c7de17187f15dc3189de27fdd"  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
   on:
-    branch: deploy
+    branch: master
 # Skipping a deployment with the  provider because this branch is not permitted
