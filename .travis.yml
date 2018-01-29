@@ -11,8 +11,13 @@ script:
  # Testing the project
  - mvn verify
 
+env:
+  global:
+    - MY_ENV=false
+
  # Deploying the project
 deploy:
   on:
     branch: master
+    condition: $MY_ENV = "true"
 # Skipping a deployment with the  provider because this branch is not permitted
