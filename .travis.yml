@@ -14,6 +14,6 @@ script:
  # Deploying the project
 deploy:
   on:
-    branch: deploy
+    branch: master
  # Skipping a deployment with the  provider because this branch is not permitted
 
