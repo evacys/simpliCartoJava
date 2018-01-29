@@ -11,25 +11,14 @@ script:
  # Testing the project
  - mvn verify
  
- 
- 
-# jobs:
-  # include:
-    # - stage: GitHub Release
-      #script: skip
-       # before_deploy:
-      # Set up git user name and tag this commit
-      # - git config --local user.name "evacys"
-      # - git config --local user.email "eva.chenyensu@gmail.com"
-      # deploy:
-        # provider: releases
-        # api_key: "cb32ebb9deec2d86ee6294f0e535fc3d25ae59ea"
+
 
  # Deploying the project
  deploy:
-  # provider: heroku
-  # api_key: "8ba59df0-bb57-4150-b2b6-2084cc48dda0"
-  on:
-    branch: master
- # Skipping a deployment with the  provider because this branch is not permitted
+   provider: pages
+   skip-cleanup: true
+   github-token: cb32ebb9deec2d86ee6294f0e535fc3d25ae59ea  # Set in travis-ci.org dashboard, marked secure
+   keep-history: true
+   on:
+     branch: master
 
