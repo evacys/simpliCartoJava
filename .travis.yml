@@ -10,15 +10,9 @@ script:
 
  # Testing the project
  - mvn verify
- 
-
 
  # Deploying the project
- deploy:
-   provider: pages
-   skip-cleanup: true
-   github-token: cb32ebb9deec2d86ee6294f0e535fc3d25ae59ea  # Set in travis-ci.org dashboard, marked secure
-   keep-history: true
-   on:
-     branch: master
-
+deploy:
+  on:
+    branch: deploy
+# Skipping a deployment with the  provider because this branch is not permitted
