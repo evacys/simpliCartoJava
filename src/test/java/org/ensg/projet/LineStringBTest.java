@@ -27,7 +27,7 @@ public class LineStringBTest extends LineStringB {
 	@Before
 	public void initialize() {
 		
-		//Point pt1 = new Point(new Coordinate(2.0,2.0), null, 0);
+		Point pt1 = new Point(new Coordinate(2.0,2.0), null, 0);
 		Point pt2 = new Point(new Coordinate(3.0,3.0), null, 0);
 		Point pt3 = new Point(new Coordinate(5.0,1.0), null, 0);
 		Point pt4 = new Point(new Coordinate(7.0,4.0), null, 0);
