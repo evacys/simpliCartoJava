@@ -19,6 +19,7 @@ inputFilePath is a string that corresponds to the input layer path
 
 shp.readShp(inputFilePath);
 
+
 ******************************
 To write the simplified geometries into a new shapefile, we need to type the following command
 
@@ -35,3 +36,4 @@ If it is a Point layer use: createFeaturePoint
 If it is a line use: createFeatureLine
 
 If it is a polygon use: createFeaturePolygon
+
